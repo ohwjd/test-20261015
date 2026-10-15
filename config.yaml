@@ -1,0 +1,46 @@
+schema_version: 3
+campaign:
+  name: "test-20261015"
+  title: "Campaign name 2"
+  description: ""
+  instigator: "297915765"
+  repo_id: 1420600330
+  language: "en"
+  license: "CC-BY-4.0"
+automation:
+  central_repository: "lets-encode/lets-encode"
+  ref: "develop"
+  path: "scripts/coordinator.ts"
+source:
+  kind: "facsimile"
+  images:
+    - "sources/img/01.jpg"
+    - "sources/img/02.jpg"
+    - "sources/img/03.jpg"
+    - "sources/img/04.jpg"
+  header:
+    title: "Mondnacht am Meer"
+    composer: "Baumann"
+    publisher: ""
+    date: ""
+  rights_acknowledged: "1"
+pieces:
+  - id: "piece-01"
+    kind: "facsimile"
+    preparation: "omr"
+    path: "sources/piece-01/score.mei"
+    zones:
+      - { surface: 1, ulx: 0, uly: 0, lrx: 2000, lry: 2581 }
+      - { surface: 2, ulx: 0, uly: 0, lrx: 2000, lry: 2581 }
+      - { surface: 3, ulx: 0, uly: 0, lrx: 2000, lry: 2581 }
+      - { surface: 4, ulx: 0, uly: 0, lrx: 2000, lry: 2581 }
+    header:
+      title: "Mondnacht am Meer"
+      composer: "Baumann"
+fragmentation:
+  strategy: "by-piece"
+validation:
+  required_validations: 1
+  pass_threshold: 1
+locking:
+  stale_after_minutes: 1440
